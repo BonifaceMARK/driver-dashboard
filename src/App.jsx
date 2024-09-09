@@ -9,10 +9,10 @@ const App = () => {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <Sidebar />
+      <Sidebar className="w-64 md:w-72 lg:w-80 xl:w-96 bg-gray-800 text-white" />
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col md:ml-64 lg:ml-80 xl:ml-10000">
+      <div className="flex-1 flex flex-col">
         <Header />
 
         <div className="flex-1 p-4">
