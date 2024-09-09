@@ -13,6 +13,7 @@ const Sidebar = () => {
         ☰
       </button>
       
+      {/* Sidebar */}
       <div
         className={`bg-gray-800 text-white h-full w-64 md:w-48 lg:w-64 xl:w-80 fixed top-0 left-0 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:relative md:translate-x-0`}
       >
