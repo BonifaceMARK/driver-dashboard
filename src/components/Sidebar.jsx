@@ -1,6 +1,6 @@
 const Sidebar = () => {
     return (
-      <div className="w-64 h-full bg-gray-800 text-white">
+      <div className="bg-gray-800 text-white h-full w-64 md:w-48 lg:w-64 xl:w-80 fixed top-0 left-0">
         <div className="p-4 text-2xl font-bold">Driver Dashboard</div>
         <nav className="mt-6">
           <ul>
