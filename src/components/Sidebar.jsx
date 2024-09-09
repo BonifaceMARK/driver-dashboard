@@ -1,6 +1,21 @@
+import React, { useState } from 'react';
+
 const Sidebar = () => {
-    return (
-      <div className="bg-gray-800 text-white h-full w-64 md:w-48 lg:w-64 xl:w-80 fixed top-0 left-0">
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      {/* Toggle Button for Mobile View */}
+      <button
+        className="md:hidden fixed top-0 left-0 m-4 p-2 text-white bg-gray-800 rounded"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        ☰
+      </button>
+      
+      <div
+        className={`bg-gray-800 text-white h-full w-64 md:w-48 lg:w-64 xl:w-80 fixed top-0 left-0 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:relative md:translate-x-0`}
+      >
         <div className="p-4 text-2xl font-bold">Driver Dashboard</div>
         <nav className="mt-6">
           <ul>
@@ -10,8 +25,8 @@ const Sidebar = () => {
           </ul>
         </nav>
       </div>
-    );
-  };
-  
-  export default Sidebar;
-  
+    </>
+  );
+};
+
+export default Sidebar;
