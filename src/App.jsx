@@ -12,7 +12,7 @@ const App = () => {
       <Sidebar />
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col ml-64 lg:ml-80 xl:ml-96">
+      <div className="flex-1 flex flex-col ml-100 lg:ml-100 xl:ml-100">
         <Header />
 
         <div className="flex-1 p-4">
